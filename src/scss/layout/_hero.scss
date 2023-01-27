@@ -7,36 +7,36 @@
     align-items: center;
     text-align: center;
 
-        &--title__1 {
-            color: white;
-            font: $roboto_slab_30;
-            text-transform: uppercase;
-            line-height: 1.67;
+    &--title__1 {
+        color: white;
+        font: $roboto_slab_30;
+        text-transform: uppercase;
+        line-height: 1.67;
 
-            @media (min-width: 768px){
-                font-size: 4.688rem;
-                line-height: 1.33;
-                transition: all 2s;
-            }
-            @media (min-width: 1200px){
-                font-size: 100px;
-                line-height: 1.32;
-                transition: all 2s;
-            }
-        }   
-    
-        &--title__2 {
-        font: $roboto__16;
-        line-height: 1.17;
-        color: $white;
-        padding: 0 16px;
-
-        @media (min-width: 768px) {
-                font-size: 24px;
-                line-height: 1.17;
-                transition: all 2s;
-            }
+        @media (min-width: 768px){
+            font-size: 4.688rem;
+            line-height: 1.33;
+            transition: all 2s;
         }
+        @media (min-width: 1200px){
+            font-size: 100px;
+            line-height: 1.32;
+            transition: all 2s;
+        }
+    }   
+    
+    &--title__2 {
+    font: $roboto__16;
+    line-height: 1.17;
+    color: $white;
+    padding: 0 16px;
+
+    @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 1.17;
+            transition: all 2s;
+    }
+}
 
     &--button {
         height: 2.369rem;
@@ -44,20 +44,19 @@
         border-radius: 50%;
         background-color: $white;
         margin: 10px 0 37px 0;
-
-             img {
-                 width: 50%;
-                 height: 100%;
-             }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
 
         @media (min-width: 768px) {
-                height: 45px;
-                width: 45px;
-                margin: 5px 0 45px 0;
-            }
-        
+            height: 45px;
+            width: 45px;
+            margin: 5px 0 45px 0;
+        }
+
         @media (min-width: 1200px) {
-                margin: 33px 0 33px 0;
+            margin: 33px 0 33px 0;
         }
     }
 }

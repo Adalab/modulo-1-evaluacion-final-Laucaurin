@@ -7,7 +7,19 @@
     background-color: $greyish-brown;
     text-align: center;
     gap: 30px;
-    padding: 65px 0 50px 0;
+    padding-bottom: 60px;
+}
+.aside--button__2 {
+    width: 2.369rem;
+    height: 2.369rem;
+    border-radius: 50%;
+    background-color: $white;
+    position: relative;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .footer--nav {

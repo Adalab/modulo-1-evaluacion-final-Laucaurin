@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-top: 19.631rem;
     text-align: center;
 
         &--title__1 {
@@ -13,23 +12,52 @@
             font: $roboto_slab_30;
             text-transform: uppercase;
             line-height: 1.67;
+
+            @media (min-width: 768px){
+                font-size: 4.688rem;
+                line-height: 1.33;
+                transition: all 2s;
+            }
+            @media (min-width: 1200px){
+                font-size: 100px;
+                line-height: 1.32;
+                transition: all 2s;
+            }
         }   
     
         &--title__2 {
         font: $roboto__16;
+        line-height: 1.17;
         color: $white;
         padding: 0 16px;
+
+        @media (min-width: 768px) {
+                font-size: 24px;
+                line-height: 1.17;
+                transition: all 2s;
+            }
         }
 
     &--button {
         height: 2.369rem;
         width: 2.369rem;
-        text-decoration: none;
         border-radius: 50%;
-        color:$primary-color;
-        padding-top: 12px;
         background-color: $white;
-        margin: 16px 0 36px 0;
-        cursor: pointer;
+        margin: 10px 0 37px 0;
+
+             img {
+                 width: 50%;
+                 height: 100%;
+             }
+
+        @media (min-width: 768px) {
+                height: 45px;
+                width: 45px;
+                margin: 5px 0 45px 0;
+            }
+        
+        @media (min-width: 1200px) {
+                margin: 33px 0 33px 0;
+        }
     }
 }

@@ -5,6 +5,20 @@
     z-index: 1;
     top: 0;
     background-color: $primary-color;
-    padding: 10px;
+    padding: 10px; //investiga sobre cómo centrar esto
     cursor: pointer;
+    
+    @media (min-width: 768px) {
+        width: 41.6px;
+        height: 44px;
+        transition: 2s;
+        padding: 13px;
+    }
+    @media (min-width: 1200px) {
+        width: 45.1px;
+        height: 44.9px;
+        transition: 2s;
+        padding: 13px;
+    }
 }
+

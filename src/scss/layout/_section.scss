@@ -1,0 +1,43 @@
+.section {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 34px 12px 42px 21px;
+
+        &--p1 {
+            font: $roboto__14;
+            color: $primary-color;
+            }
+
+        &--title {
+            font: $roboto_slab_24;
+            color: black;
+            padding-top: 7px;
+        }
+
+        &--p2 {
+            color: $greyish-brown;
+            font: $roboto__18;
+            padding-top: 10px;
+            line-height: 1.67;
+        }
+
+        &--button {
+            width: 160px;
+            height: 45px;
+            flex-grow: 0;
+            margin-top: 21px;
+            border-radius: 22.5px;
+            border: solid 2px $primary-color;
+            text-align: center;
+            cursor: pointer;
+            padding: 10px;
+
+            &__link {
+                text-decoration: none;
+                
+                font: $roboto__20;
+                color: $primary-color;
+            } 
+        }
+}

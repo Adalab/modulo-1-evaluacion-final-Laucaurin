@@ -1,0 +1,23 @@
+.aside {
+    height: 624px;
+    background-color: $white-two;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding:29px 72px 39px 68px;
+    text-align: center;
+    
+}
+.aside--title {
+    color:$black;
+    font: $roboto_slab_20;
+}
+
+.aside--article__title {
+    color: $black;
+    font: $roboto_slab_18;
+}
+.aside--article__p {
+    color: $black;
+    font: $roboto__18;
+}

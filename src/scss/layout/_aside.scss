@@ -4,20 +4,51 @@
     display: grid;
     grid-template-columns: 1fr;
     gap:20px;
-    padding:29px 72px 39px 68px;
+    padding:29px 15px 39px 15px;
     text-align: center;
-    
-}
-.aside--title {
+    align-items: center;
+    justify-content: center;
+
+    &--title {
     color:$black;
     font: $roboto_slab_20;
+    line-height: 1.5;
+    padding: 0 60px; 
 }
 
-.aside--article__title {
-    color: $black;
-    font: $roboto_slab_18;
+    &--article {
+        padding: 0 57px 0 57px;
+
+        &__title {
+        color: $black;
+        font: $roboto_slab_18;
+        line-height: 1.67;
+        }
+    }
+
+    &--article__p {
+        color: $black;
+        font: $roboto__18;
+        line-height: 1.67;
+    }
+    
+    &--button {
+    width: 184px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $primary-color;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 68px;
+        
+    &__link {
+            text-decoration: none;
+            font: $roboto__20;
+            color: $white;
+        }
+    }
 }
-.aside--article__p {
-    color: $black;
-    font: $roboto__18;
-}
+
+
+
+

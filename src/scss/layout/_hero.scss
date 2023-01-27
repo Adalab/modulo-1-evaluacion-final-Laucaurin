@@ -1,0 +1,38 @@
+.hero {
+    height: 100vh;
+    background: url(../images/cover.jpeg) center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 19.631rem;
+}
+
+.hero--circle {
+    width: 2.369rem;
+    height: 2.231rem;
+    border-radius: 50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero--circle__link {
+        width: 16.8px;
+}
+
+
+.hero--title__1 {
+    color: white;
+    font: $roboto_slab_30;
+    text-align: center;
+}
+
+.hero--title__2 {
+    font: $roboto__16;
+    color: white;
+    text-align: center;
+}

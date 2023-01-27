@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="icon" href="./assets/images/favicon.png" /> -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <include src="./partials/header.html" title="Bienvenidos a Adalab"></include>
-      <include src="./partials/main.html"></include>
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/section-1.html"></include>
+      <include src="./partials/section-2.html"></include>
       <include src="./partials/footer.html"></include>
-    </div>
-    <script src="./assets/js/main.js"></script>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

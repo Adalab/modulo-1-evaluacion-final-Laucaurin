@@ -1,15 +1,10 @@
 .header {
-    width: 2.125rem;
+    width: 2.313rem;
     height: 2.313rem;
     position: fixed;
     z-index: 1;
     top: 0;
     background-color: $primary-color;
     padding: 10px;
-}
-
-.header--link__img {
-    width: 0.844rem;
-    height: 0.694rem;
-
+    cursor: pointer;
 }

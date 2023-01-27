@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 465px;
+    background-color: $greyish-brown;
+    text-align: center;
+    gap: 30px;
+    padding: 65px 0 50px 0;
+}
+
+.footer--nav {
+    line-height: 1.88;
+    
+    a {
+        text-decoration: none;
+        color: $white;
+        font: $roboto__16;
+        text-transform: uppercase;
+    }
+}
+
+.footer--small {
+    font: $roboto__14;
+    color: $white;
+    line-height: 2.14;
+
+    span {
+        color: $primary-color;
+    }
+}

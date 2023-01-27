@@ -25,19 +25,15 @@
         &--button {
             width: 160px;
             height: 45px;
-            // flex-grow: 0;
             margin-top: 21px;
             border-radius: 22.5px;
             border: solid 2px $primary-color;
             text-align: center;
             cursor: pointer;
-            padding: 10px;
-
-            &__link {
-                text-decoration: none;
-                
-                font: $roboto__20;
-                color: $primary-color;
-            } 
-        }
+            padding-top: 8px;
+            font: $roboto__20;
+            text-decoration: none;
+            color: $primary-color;
+        } 
+         
 }

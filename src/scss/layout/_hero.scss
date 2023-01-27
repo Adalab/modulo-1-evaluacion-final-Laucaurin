@@ -8,28 +8,28 @@
     padding-top: 19.631rem;
     text-align: center;
 
-     &--title__1 {
-        color: white;
-        font: $roboto_slab_30;
-        text-transform: uppercase;
-        line-height: 1.67;
-    }   
+        &--title__1 {
+            color: white;
+            font: $roboto_slab_30;
+            text-transform: uppercase;
+            line-height: 1.67;
+        }   
     
-    &--title__2 {
-    font: $roboto__16;
-    color: $white;
-    }
+        &--title__2 {
+        font: $roboto__16;
+        color: $white;
+        padding: 0 16px;
+        }
 
-    &--circle {
-        width: 2.369rem;
+    &--button {
         height: 2.369rem;
+        width: 2.369rem;
+        text-decoration: none;
         border-radius: 50%;
-        background-color:$white;
-        padding: 12px 11px;
-        margin: 15px 0 35px 0;
-
-            &__link {
-            width: 16.8px;
-            }
+        color:$primary-color;
+        padding-top: 12px;
+        background-color: $white;
+        margin: 16px 0 36px 0;
+        cursor: pointer;
     }
 }

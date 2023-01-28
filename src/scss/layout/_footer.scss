@@ -3,24 +3,40 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // height: 465px;
     background-color: $greyish-brown;
     text-align: center;
     gap: 30px;
-    padding-bottom: 60px;
-}
-.aside--button__2 {
-    width: 2.369rem;
-    height: 2.369rem;
-    border-radius: 50%;
-    background-color: $white;
-    position: relative;
-    bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 65px 0;
 
+    @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 56px 159px 34px 159px;
+            text-align: left;
+            transition: all 3s;
+    }
+    @media (min-width: 1200px) {
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 0px 40px 0px;
+            text-align: left;
+            gap: 70px;
+            transition: all 3s;
+    }
 }
+// .aside--button__2 {
+//     width: 2.369rem;
+//     height: 2.369rem;
+//     border-radius: 50%;
+//     background-color: $white;
+//     position: relative;
+//     bottom: 1rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+// }
 
 .footer--nav {
     line-height: 1.88;
@@ -40,5 +56,8 @@
 
     span {
         color: $primary-color;
+    }
+    @media (min-width: 768px) {
+        order:-1;
     }
 }

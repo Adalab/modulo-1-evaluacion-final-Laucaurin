@@ -6,7 +6,7 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-
+    
     &--title__1 {
         color: white;
         font: $roboto_slab_30;
@@ -16,12 +16,12 @@
         @media (min-width: 768px){
             font-size: 4.688rem;
             line-height: 1.33;
-            transition: all 2s;
+            transition: all 3s ease-in-out;
         }
         @media (min-width: 1200px){
             font-size: 100px;
             line-height: 1.32;
-            transition: all 2s;
+            transition: all 3s ease-in-out;
         }
     }   
     
@@ -29,34 +29,40 @@
     font: $roboto__16;
     line-height: 1.17;
     color: $white;
-    padding: 0 16px;
+    padding: 0 16px 15px 16px ;
 
-    @media (min-width: 768px) {
-            font-size: 24px;
-            line-height: 1.17;
-            transition: all 2s;
+        @media (min-width: 768px) {
+                font-size: 24px;
+                line-height: 1.17;
+                transition: all 3s;
+        }
     }
-}
 
     &--button {
-        height: 2.369rem;
-        width: 2.369rem;
+        width: 37.9px;
+        height: 35.7px;
         border-radius: 50%;
         background-color: $white;
-        margin: 10px 0 37px 0;
+        margin-bottom: 37px;
         display: flex;
         justify-content: center;
         align-items: center;
         
+        &:hover{
+            transform: translateY(8px);
+            transition: 0.7s ease-out;
+        }
 
         @media (min-width: 768px) {
+            width: 42.5px;
             height: 45px;
-            width: 45px;
-            margin: 5px 0 45px 0;
+            margin-bottom: 45px;
         }
 
         @media (min-width: 1200px) {
-            margin: 33px 0 33px 0;
+            width: 46.2px;
+            height: 45.9px;
+            margin: 15px 0 33px 0;
         }
     }
 }

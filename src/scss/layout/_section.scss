@@ -12,7 +12,6 @@
         transition: 2s;
     }
 
-
     &--p1 {
         font: $roboto__14;
         color: $primary-color;
@@ -49,17 +48,37 @@
         height: 45px;
         border-radius: 22.5px;
         border: solid 2px $primary-color;
+        color: $primary-color;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        cursor: pointer;
         font: $roboto__20;
-    
-        a {
-            text-decoration: none;
-            color: $primary-color;
+        // transition: all .5s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        text-decoration: none;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: $primary-color;
+            color: $white;
+            transition: all .8s;
+            border-radius: 10rem;
+            z-index: -1;
         }
-    } 
-         
+    
+        &:hover {
+            color: $white;
+    
+            &:before {
+                width: 100%;
+            }
+        }
+    }
 }

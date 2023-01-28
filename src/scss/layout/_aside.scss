@@ -30,7 +30,6 @@
                 grid-template-columns: 1fr 1fr 1fr;;
             }
 
-
     &--article__title {
         color: $black;
         font: $roboto_slab_18;
@@ -79,16 +78,3 @@
     } 
 }
 
-
-
-
-
-    // @media (min-width: 768px) {
-    //     height: 45px;
-    //     width: 45px;
-    //     margin: 5px 0 45px 0;
-    // }
-
-    // @media (min-width: 1200px) {
-    //     margin: 33px 0 33px 0;
-    // }

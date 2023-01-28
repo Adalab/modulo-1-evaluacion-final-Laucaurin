@@ -1,11 +1,11 @@
-.section2 {
+.container--aside {
     background-color: $white-two;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &--title {
+    &__title {
         color:$black;
         font: $roboto_slab_20;
         line-height: 1.5;

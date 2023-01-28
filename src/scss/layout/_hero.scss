@@ -1,6 +1,7 @@
 .hero {
     height: 100vh;
     background: url(../images/cover.jpeg) center/cover;
+    // background-position: 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -39,29 +40,29 @@
     }
 
     &--button {
-        width: 37.9px;
-        height: 35.7px;
+        width: 37px;
+        height: 37px;
         border-radius: 50%;
         background-color: $white;
         margin-bottom: 37px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         &:hover{
             transform: translateY(8px);
             transition: 0.7s ease-out;
         }
 
         @media (min-width: 768px) {
-            width: 42.5px;
-            height: 45px;
+            width: 43px;
+            height: 43px;
             margin-bottom: 45px;
         }
 
         @media (min-width: 1200px) {
-            width: 46.2px;
-            height: 45.9px;
+            width: 45px;
+            height: 45px;
             margin: 15px 0 33px 0;
         }
     }

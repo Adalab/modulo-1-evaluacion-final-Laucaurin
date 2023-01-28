@@ -95,7 +95,25 @@
                 width: 100%;
             }
         }
+
+        &__2 {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: $white;
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                transform: translateY(-8px);
+                transition: 0.7s ease-out;
+            }
     }
+
+    }
+
+
 }
-
-

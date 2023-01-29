@@ -9,7 +9,7 @@
     }
     @include desktop {
         padding: 58px 136px 67px 275px;
-        transition: 2s;
+        transition: all 2s linear;
     }
 
     &--p1 {
@@ -44,7 +44,7 @@
     }
 
     &--button {
-        @include button_large (160px, 45px, $primary-color, solid 2px $primary-color, none);
-        @include button--animation ($primary-color, $white, $white)
+        @include button--large (160px, 45px, $primary-color, solid 2px $primary-color, none);
+        @include button--large__animation ($primary-color, $white, $white);
     }
 }

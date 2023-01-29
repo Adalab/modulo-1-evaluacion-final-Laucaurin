@@ -2,30 +2,29 @@
     position: fixed;
     z-index: 1;
     top: 0;  
-}
-.header--button {
-    width: 2.313rem;
-    height: 2.313rem;
+
+    &--button {
+    width: 34px;
+    height: 34px;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s ease-in-out;
     
         &:hover {
             transform: scale(1.1 , 1.1);
             transform-origin: top left;
             border-radius: 8%;
-            transition: 0.5s;
         }
 
-    @include tablet {
-        width: 44px;
-        height: 44px;
-        transition: 2s;
+        @include tablet {
+            width: 44px;
+            height: 44px;
+        }
+        @include desktop {
+            width: 45px;
+            height: 45px;
+        }   
     }
-    @include desktop {
-        width: 45px;
-        height: 45px;
-        transition: 2s;
-    }   
 }

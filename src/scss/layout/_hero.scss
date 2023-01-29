@@ -1,27 +1,30 @@
 .hero {
     height: 100vh;
-    background: url(../images/cover.jpeg) center/cover;
+    background-image: url(../images/cover.jpeg);
+    background-position: 42%;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-
+    
+    
     &--title__1 {
         color: white;
         font: $roboto_slab_30;
         text-transform: uppercase;
         line-height: 1.67;
+        transition: 3s linear;
 
-        @media (min-width: 768px){
-            font-size: 4.688rem;
-            line-height: 1.33;
-            transition: all 2s;
+        @include tablet {
+            font-size: 75px;
+            line-height: 1.33; 
         }
-        @media (min-width: 1200px){
+        @include desktop {
             font-size: 100px;
             line-height: 1.32;
-            transition: all 2s;
         }
     }   
     
@@ -29,34 +32,27 @@
     font: $roboto__16;
     line-height: 1.17;
     color: $white;
-    padding: 0 16px;
+    padding: 0 16px 15px 16px ;
 
-    @media (min-width: 768px) {
-            font-size: 24px;
-            line-height: 1.17;
-            transition: all 2s;
+        @include tablet {
+                font-size: 24px;
+                line-height: 1.17;
+                transition: all 3s;
+        }
     }
-}
 
     &--button {
-        height: 2.369rem;
-        width: 2.369rem;
-        border-radius: 50%;
-        background-color: $white;
-        margin: 10px 0 37px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
-        @media (min-width: 768px) {
-            height: 45px;
-            width: 45px;
-            margin: 5px 0 45px 0;
+        margin-bottom: 37px;
+        @include button--cicle (37px, 37px, translateY(7px));
+        @include tablet {
+            width: 43px;
+            height: 43px;
+            margin-bottom: 45px;
         }
-
-        @media (min-width: 1200px) {
-            margin: 33px 0 33px 0;
+        @include desktop {
+            width: 45px;
+            height: 45px;
+            margin: 15px 0 33px 0;
         }
     }
 }

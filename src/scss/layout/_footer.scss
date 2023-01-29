@@ -3,42 +3,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // height: 465px;
     background-color: $greyish-brown;
     text-align: center;
     gap: 30px;
-    padding-bottom: 60px;
-}
-.aside--button__2 {
-    width: 2.369rem;
-    height: 2.369rem;
-    border-radius: 50%;
-    background-color: $white;
-    position: relative;
-    bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.footer--nav {
-    line-height: 1.88;
+    padding: 65px 0 36px 0;
     
-    a {
-        text-decoration: none;
+    @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 56px 111px 34px 150px;
+            text-align: left;
+    }
+    @include desktop {
+            justify-content: center;
+            padding: 50px 0px 40px 0px;
+            text-align: left;
+            gap: 150px;
+    }
+
+    &--nav {
+        line-height: 1.88;
+        
+            a {
+                text-decoration: none;
+                color: $white;
+                font: $roboto__16;
+                text-transform: uppercase;
+            }
+    }
+
+    &--small {
+        font: $roboto__14;
         color: $white;
-        font: $roboto__16;
-        text-transform: uppercase;
+        line-height: 2.14;
+
+        span {
+            color: $primary-color;
+        }
+        @include tablet {
+            order:-1;
+        }
     }
 }
 
-.footer--small {
-    font: $roboto__14;
-    color: $white;
-    line-height: 2.14;
 
-    span {
-        color: $primary-color;
-    }
-}
+
+

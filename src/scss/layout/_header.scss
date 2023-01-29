@@ -2,25 +2,29 @@
     position: fixed;
     z-index: 1;
     top: 0;  
-}
-.header--button {
-    width: 2.313rem;
-    height: 2.313rem;
+
+    &--button {
+    width: 34px;
+    height: 34px;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media (min-width: 768px) {
-        width: 41.6px;
-        height: 44px;
-        transition: 2s;
-
-    @media (min-width: 1200px) {
-        width: 45.1px;
-        height: 44.9px;
-        transition: 2s;
+    transition: 1s ease-in-out;
+    
+        &:hover {
+            transform: scale(1.1 , 1.1);
+            transform-origin: top left;
+            border-radius: 8%;
         }
-                    
+
+        @include tablet {
+            width: 44px;
+            height: 44px;
+        }
+        @include desktop {
+            width: 45px;
+            height: 45px;
+        }   
     }
 }

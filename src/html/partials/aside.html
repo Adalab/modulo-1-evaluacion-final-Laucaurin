@@ -1,21 +1,31 @@
-<section class="section2">
-  <h3 class="section2--title">Año nuevo, movimientos nuevos</h3>
-  <aside class="aside" id="aside-anchor">
-    <article class="aside--article">
-      <h4 class="aside--article__title">Entrenamientos</h4>
-      <p class="aside--article__p">Sesiones de running y entrenamientos.</p>
-    </article>
-    <article class="aside--article">
-      <h4 class="aside--article__title">Cualquier nivel</h4>
-      <p class="aside--article__p">Entrenamientos para cada nivel.</p>
-    </article>
-    <article class="aside--article">
-      <h4 class="aside--article__title">Exclusividad</h4>
-      <p class="aside--article__p">Productos para miembros premium.</p>
-    </article>
-  </aside>
-
-  <div class="aside--button">
-    <a href="https://adalab.es/" target="_blank">Empezar ahora</a>
+<aside class="container--aside" id="aside--anchor">
+  <h3 class="container--aside__title">Año nuevo, movimientos nuevos</h3>
+  <div class="aside">
+    <include
+      src="./aside-article.html"
+      promo="Entrenamientos"
+      promo_description="Sesiones de running y entrenamientos."
+    ></include>
+    <include
+      src="./aside-article.html"
+      promo="Cualquier nivel"
+      promo_description="Entrenamientos para cada nivel."
+    ></include>
+    <include
+      src="./aside-article.html"
+      promo="Exclusividad"
+      promo_description="Productos para miembros premium."
+    ></include>
   </div>
-</section>
+  <a class="aside--button" href="https://adalab.es/" target="_blank"
+    >Empezar ahora</a
+  >
+  <div class="aside--button__2">
+    <a href="#home--anchor"
+      ><img
+        src="./assets/images/ico-arrow.svg"
+        alt="icon arrow"
+        title="icon arrow"
+    /></a>
+  </div>
+</aside>

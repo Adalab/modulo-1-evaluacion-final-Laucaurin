@@ -43,7 +43,7 @@
 
     &--button {
         margin-bottom: 37px;
-        @include button--cicle (37px, 37px, translateY(7px));
+        @include button--cicle (37px, 37px);
         @include tablet {
             width: 43px;
             height: 43px;

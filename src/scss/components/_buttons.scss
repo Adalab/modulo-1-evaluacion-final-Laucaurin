@@ -13,6 +13,7 @@
     color: $color;
     border: $border;
     background-color: $background-color;
+    transition-duration: 1s;
 }
     
 @mixin button--large__animation ($background-color, $color, $color-hover) {
@@ -29,17 +30,18 @@
         border-radius: 10rem;
         z-index: -1;
     }
-    
-    &:hover {
-        color: $color;
+        &:hover {
+        color: $color-hover;
+        transform-origin: 0% 0%;
+        transform: translate(25px);
     
         &::before {
-            width: 100%;
+             width: 100%;
         }
     }
 }
 
-@mixin button--cicle ($width, $height, $transform) {
+@mixin button--cicle ($width, $height) {
     width: $width;
     height: $height;
     border-radius: 50%;
@@ -47,9 +49,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease-out;
 
     &:hover {
-         transform: $transform;
-         transition: all 0.5s ease-out;
+         transform: scale(1.2);
+    }
+}
+
+@mixin button--cicle__border {
+    &:hover {
+        animation-name: color;
+        animation-duration: 2s;
+        transition: all 0.5s linear;
+
+        @keyframes color {
+            0% {
+                border: solid 1px $primary-color;
+            }
+
+            100% {
+                border: solid 1.5px $primary-color;
+            }
+        }
     }
 }

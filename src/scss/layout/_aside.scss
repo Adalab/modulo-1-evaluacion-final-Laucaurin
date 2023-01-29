@@ -67,7 +67,8 @@
         &__2 {
             position: relative;
             top: 20px;
-            @include button--cicle (45px, 45px, translateY(-7px));  
+            @include button--cicle (45px, 45px);
+            @include button--cicle__border;
         }
     }
 }

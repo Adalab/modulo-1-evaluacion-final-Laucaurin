@@ -1,17 +1,13 @@
-@import "core/reset";
+@import 'core/reset';
+@import 'core/fonts';
 @import 'core/variables';
-@import "layout/header";
+@import 'components/buttons';
+@import 'components/media';
+@import 'layout/header';
 @import 'layout/hero';
-@import "layout/section";
+@import 'layout/section';
 @import 'layout/aside';
-@import 'layout/footer'
-
-
-
-// font-family: 'Roboto',
-// sans-serif;
-// font-family: 'Roboto Slab',
-// serif; 
+@import 'layout/footer';
 
 
 

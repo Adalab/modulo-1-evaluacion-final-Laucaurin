@@ -8,7 +8,7 @@
     gap: 30px;
     padding: 65px 0;
 
-    @media (min-width: 768px) {
+    @include tablet {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
@@ -16,7 +16,7 @@
             text-align: left;
             transition: all 3s;
     }
-    @media (min-width: 1200px) {
+    @include desktop {
             justify-content: center;
             align-items: flex-start;
             padding: 50px 0px 40px 0px;
@@ -45,7 +45,7 @@
     span {
         color: $primary-color;
     }
-    @media (min-width: 768px) {
+    @include tablet {
         order:-1;
     }
 }

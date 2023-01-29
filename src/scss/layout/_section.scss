@@ -4,10 +4,10 @@
     justify-content: flex-start;
     padding: 34px 12px 42px 21px;
 
-    @media (min-width: 768px) {
+    @include tablet {
         padding: 37px 39px 41px 37px;
     }
-    @media (min-width: 1200px) {
+    @include desktop {
         padding: 58px 136px 67px 275px;
         transition: 2s;
     }
@@ -17,7 +17,7 @@
         color: $primary-color;
         padding-bottom: 7px;
 
-        @media (min-width: 768px) {
+        @include tablet {
             font-size: 16px;
         }
     }
@@ -27,7 +27,7 @@
         color: black;
         padding-bottom: 10px;
 
-        @media (min-width: 768px) {
+        @include tablet {
             font-size: 32px;
         }
     }
@@ -38,46 +38,13 @@
         padding-bottom: 21px;
         line-height: 1.67;
 
-        @media (min-width: 768px) {
+        @include tablet {
             font-size: 20px;
         }
     }
 
     &--button {
-        width: 160px;
-        height: 45px;
-        border-radius: 22.5px;
-        border: solid 2px $primary-color;
-        color: $primary-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font: $roboto__20;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        text-decoration: none;
-
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            background-color: $primary-color;
-            color: $white;
-            transition: 0.8s;
-            border-radius: 10rem;
-            z-index: -1;
-        }
-    
-        &:hover {
-            color: $white;
-    
-            &:before {
-                width: 100%;
-            }
-        }
+        @include button_large (160px, 45px, $primary-color, solid 2px $primary-color, none);
+        @include button--animation ($primary-color, $white, $white)
     }
 }

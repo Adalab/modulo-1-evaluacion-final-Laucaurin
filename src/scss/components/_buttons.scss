@@ -1,0 +1,57 @@
+@mixin button_large ($width, $height, $color, $border, $background-color){
+
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: $roboto__20;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+
+    width: $width;
+    height: $height;
+    color: $color;
+    border: $border;
+    background-color: $background-color;
+}
+    
+@mixin button--animation ($background-color, $color, $color-hover) {
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: $background-color;
+        color: $color;
+        transition: 1s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    
+    &:hover {
+        color: $color;
+        
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+@mixin button_cicle ($width, $height, $transform) {
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        transform: $transform;
+        transition: 0.7s ease-out;
+    }
+}

@@ -33,7 +33,7 @@ Con el fin de trabajar en el proyecto de forma organizada, simplificar código y
 - [ ] Partials en ficheros scss y html.
 - [ ] Includes dentro de includes.
 - [ ] Parches con variables @@.
-- [ ] Uso deidas relativas.
+- [ ] Uso de medidas relativas.
 - [ ] Variables para paleta de colores.
 - [ ] Variables para familia, tamaño y grosor de fuente.
 - [ ] Mixin para botones reutilizables.

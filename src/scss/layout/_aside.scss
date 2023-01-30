@@ -11,7 +11,6 @@
         line-height: 1.5;
         padding: 29px 60px 41px; 
         text-align: center;
-
         @include tablet {
             padding-top: 49px;
         }
@@ -21,12 +20,11 @@
 .aside {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 3.125rem;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 0 74px 0 66px;
-
     @include tablet {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -34,8 +32,7 @@
     &--article__title {
         color: $black;
         font: $roboto_slab_18;
-        line-height: 1.67; 
-        
+        line-height: 1.67;
         @include tablet {
             padding-bottom: 18px;
             line-height: 1.25;
@@ -46,17 +43,15 @@
         color: $black;
         font: $roboto__18;
         line-height: 1.67;
-
         @include tablet {
             line-height: 1.5;
         }
     }   
     
     &--button {
-        @include button--large (184px, 45px, $white, none, $primary-color);
+        @include button--large (11.5rem, 2.813rem, $white, none, $primary-color);
         @include button--large__animation ($white, $primary-color, $primary-color);
         margin: 30px 0 49px 0;
-
         @include tablet {
             margin: 48px 0 69px 0;
         }
@@ -67,7 +62,7 @@
         &__2 {
             position: relative;
             top: 20px;
-            @include button--cicle (45px, 45px);
+            @include button--cicle (2.813rem, 2.813rem);
             @include button--cicle__border;
         }
     }

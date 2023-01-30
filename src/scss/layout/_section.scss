@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: 34px 12px 42px 21px;
-
     @include tablet {
         padding: 37px 39px 41px 37px;
     }
@@ -16,9 +15,8 @@
         font: $roboto__14;
         color: $primary-color;
         padding-bottom: 7px;
-
         @include tablet {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
@@ -26,9 +24,8 @@
         font: $roboto_slab_24;
         color: black;
         padding-bottom: 10px;
-
         @include tablet {
-            font-size: 32px;
+            font-size: 2rem;
         }
     }
 
@@ -37,14 +34,13 @@
         font: $roboto__18;
         padding-bottom: 21px;
         line-height: 1.67;
-
         @include tablet {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
     }
 
     &--button {
-        @include button--large (160px, 45px, $primary-color, solid 2px $primary-color, none);
+        @include button--large (10rem, 2.813rem, $primary-color, solid 2px $primary-color, none);
         @include button--large__animation ($primary-color, $white, $white);
     }
 }

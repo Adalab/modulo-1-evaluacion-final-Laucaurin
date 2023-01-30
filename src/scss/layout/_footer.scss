@@ -7,7 +7,6 @@
     text-align: center;
     gap: 30px;
     padding: 65px 0 36px 0;
-    
     @include tablet {
             flex-direction: row;
             justify-content: space-around;
@@ -23,12 +22,12 @@
     }
 
     &--nav {
-        line-height: 2;
         a {
             text-decoration: none;
             color: $white;
             font: $roboto__16;
             text-transform: uppercase;
+            line-height: 2;
         }
     }
 
@@ -45,7 +44,3 @@
         }
     }
 }
-
-
-
-

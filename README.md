@@ -31,6 +31,21 @@ Se deben resolver las siguientes interacciones:
 
 ---
 
+## Funcionalidades y herramientas utilizadas en el proyecto
+
+Con el fin de trabajar en el proyecto de forma organizada, simplificar código y crear componentes reutilizables, he incorporado a las especificaciones del proyecto:
+
+- [ ] Trabajo en ramas.
+- [ ] Partials en ficheros scss y html.
+- [ ] Includes dentro de includes.
+- [ ] Parches con variables @@.
+- [ ] Uso de medidas relativas.
+- [ ] Variables para paleta de colores.
+- [ ] Variables para familia, tamaño y grosor de fuente.
+- [ ] Mixin para botones reutilizables.
+- [ ] Mixin para media queries.
+- [ ] Nesting con la sintaxis de Sass.
+
 ## Objetivos
 
 **General**
@@ -63,3 +78,5 @@ Se deben resolver las siguientes interacciones:
 ## Entrega
 
 - Lunes, 30 de enero a las 14:00h. La página debe estar en GitHub Pages y esté funcionando.
+
+---

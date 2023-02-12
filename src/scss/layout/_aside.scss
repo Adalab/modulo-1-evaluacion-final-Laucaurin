@@ -50,6 +50,12 @@
     
     &--button {
         @include button--large (11.5rem, 2.813rem, $white, none, $primary-color);
+
+
+
+
+
+        
         @include button--large__animation ($white, $primary-color, $primary-color);
         margin: 30px 0 49px 0;
         @include tablet {

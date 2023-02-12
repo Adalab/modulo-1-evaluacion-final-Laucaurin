@@ -40,7 +40,7 @@
     }
 
     &--button {
-        @include button--large (10rem, 2.813rem, $primary-color, solid 2px $primary-color, none);
+        @include button--large (10rem, 2.813rem, $primary-color, solid 2px $primary-color, $white);
         @include button--large__animation ($primary-color, $white, $white);
     }
 }
